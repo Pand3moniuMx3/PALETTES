@@ -75,14 +75,16 @@ export default function PaletteGrid() {
           />
         ))}
       </div>
-      <button
-        className={`btn secondary ${
-          loadAmount >= sortedPalettes.length && "disabled"
-        }`}
-        onClick={loadMore}
-      >
-        Load more
-      </button>
+      {filteredPalettes.length > loadAmount && (
+        <button
+          className={`btn secondary ${
+            loadAmount >= sortedPalettes.length && "disabled"
+          }`}
+          onClick={loadMore}
+        >
+          Load more
+        </button>
+      )}
     </div>
   );
 }
