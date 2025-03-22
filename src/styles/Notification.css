@@ -76,3 +76,11 @@
 .notification.negative .progress-track .progress-bar {
   background: var(--clr-incorrect);
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 650px) {
+  .notification {
+    width: 300px;
+  }
+}

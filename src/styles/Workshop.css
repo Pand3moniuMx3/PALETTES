@@ -96,14 +96,15 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 650px) {
-  .workshop .sidebar {
-    display: none;
-    position: absolute;
-    background: var(--clr-background);
-    inset: 0 0 0 0;
-    z-index: 2;
-  }
-  .workshop .sidebar.open {
+  .workshop {
     display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .workshop .preview-palette {
+    padding: 0;
+  }
+  .workshop .preview-palette .custom-workshop-palette {
+    min-height: 0;
   }
 }
