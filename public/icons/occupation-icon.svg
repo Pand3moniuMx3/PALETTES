@@ -1,0 +1,7 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mid Occupation Icon">
+<path id="Suitcase" d="M2 4.5H14C14.8284 4.5 15.5 5.17157 15.5 6V13C15.5 13.8284 14.8284 14.5 14 14.5H2C1.17157 14.5 0.5 13.8284 0.5 13V6C0.5 5.17157 1.17157 4.5 2 4.5Z" stroke="black"/>
+<path id="Handle" d="M10 4.5H10.5V4V3C10.5 2.17157 9.82843 1.5 9 1.5H7C6.17157 1.5 5.5 2.17157 5.5 3V4V4.5H6H10Z" stroke="black"/>
+<path id="Closing" d="M15.5 8C13.1708 8.89085 10.6424 9.37889 8 9.37889C5.35761 9.37889 2.8292 8.89085 0.5 8" stroke="black"/>
+</g>
+</svg>

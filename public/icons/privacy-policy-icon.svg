@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mid Privacy Policy Icon">
+<path id="Page" d="M8.5 1H2.5C1.94772 1 1.5 1.44772 1.5 2V12C1.5 12.5523 1.94772 13 2.5 13H7.5M8.5 1L11.5 4M8.5 1V3C8.5 3.55228 8.94772 4 9.5 4H11.5M11.5 4V7" stroke="black" stroke-linecap="round"/>
+<path id="Badge" d="M9.50001 12.6C9.50003 13.9255 12 15 12 15C12 15 14.5 13.8 14.5 12.6V10.2C13.25 10.2 12.625 9.6 12 9C12 9 10.7501 10.2 9.50001 10.2V12.6Z" stroke="black"/>
+<g id="Text">
+<path id="Line3" d="M3.5 10H7.5" stroke="black" stroke-linecap="round"/>
+<path id="Line2" d="M3.5 7H9.5" stroke="black" stroke-linecap="round"/>
+<path id="Line1" d="M3.5 4H6.5" stroke="black" stroke-linecap="round"/>
+</g>
+</g>
+</svg>

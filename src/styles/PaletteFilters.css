@@ -1,0 +1,104 @@
+.palette-list .filters {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-gap);
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+  padding: var(--global-padding);
+  overflow-y: scroll;
+}
+.palette-list .filters::-webkit-scrollbar {
+  display: none;
+}
+
+.palette-list .filters .heading-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  gap: var(--inner-gap);
+}
+
+/* FILTER OPTIONS */
+
+.palette-list .filters .selection-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--inner-gap);
+}
+.palette-list .filters .selection-row .options-wrapper {
+  display: flex;
+  gap: var(--inner-gap);
+}
+.palette-list .filters .selection-row .options-wrapper .option {
+  padding: 3px 12px;
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.palette-list .filters .selection-row .options-wrapper .option:hover,
+.palette-list .filters .selection-row .options-wrapper .option.selected {
+  border: 1px solid var(--clr-active);
+  background: var(--clr-active-bg);
+}
+
+/* COLOR FILTERS */
+
+.palette-list .filters .selection-row .options-wrapper.vertical {
+  flex-direction: column;
+}
+.palette-list
+  .filters
+  .selection-row
+  .options-wrapper.vertical
+  .color-selector {
+  display: flex;
+  gap: var(--inner-gap);
+}
+.palette-list
+  .filters
+  .selection-row
+  .options-wrapper.vertical
+  .color-selector
+  .color-input {
+  font-size: 16px;
+  height: 25px;
+  padding: 3px 12px;
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+}
+
+/* BUTTONS */
+
+.palette-list .filters .btns-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--global-gap);
+  padding-top: var(--global-gap);
+  border-top: 1px solid var(--clr-light);
+}
+
+/* MEDIA QUERIES */
+
+.palette-list .filters-btn {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .palette-list .filters-btn.visible {
+    display: flex;
+  }
+  .palette-list .filters {
+    height: auto;
+    overflow-y: visible;
+    display: none;
+  }
+  .palette-list .filters.open {
+    display: flex;
+  }
+}

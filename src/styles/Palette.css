@@ -1,0 +1,114 @@
+.palette {
+  width: 100%;
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+  background: var(--clr-background);
+  cursor: pointer;
+  transition: var(--transition);
+  user-select: none;
+  position: relative;
+}
+.palette:hover,
+.palette:hover .actions {
+  border: 1px solid var(--clr-text);
+}
+
+/* PREVIEW */
+
+.palette .preview {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-gap);
+  padding: var(--global-padding);
+  border-radius: var(--border-radius);
+}
+.palette .preview .btn-wrapper {
+  display: flex;
+  gap: var(--inner-gap);
+}
+.palette .preview .preview-btn {
+  height: 35px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+.palette .preview .preview-btn.secondary {
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* COLORS */
+
+.palette .colors {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.palette .colors .color {
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-grow: 1;
+  padding: var(--global-padding);
+  position: relative;
+}
+.palette .colors .color p {
+  color: white;
+  mix-blend-mode: difference;
+  font-family: "Inter-Regular";
+}
+.palette .colors .color p:first-of-type {
+  font-family: "Inter-Thin";
+}
+
+.palette .colors .color .copy-icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  mix-blend-mode: difference;
+  opacity: 0;
+  transition: var(--transition);
+}
+.palette .colors .color:hover .copy-icon {
+  opacity: 1;
+}
+
+/* ACTIONS */
+
+.palette .actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding-inline: 8px;
+  gap: 8px;
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  background: var(--clr-background);
+  z-index: 1;
+}
+.palette .actions svg {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .palette .actions {
+    top: 5px;
+    right: 1px;
+    border-radius: calc(var(--border-radius) - 4px);
+    scale: 0.8;
+  }
+}

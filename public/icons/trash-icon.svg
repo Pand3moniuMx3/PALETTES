@@ -1,0 +1,13 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mid Trash Icon" clip-path="url(#clip0_388_2)">
+<path id="BinBody" d="M1 3H15M3 3H13V14C13 14.5523 12.5523 15 12 15H4C3.44772 15 3 14.5523 3 14V3Z" stroke="black" stroke-linecap="round"/>
+<path id="StripeLeft" d="M6 6V12" stroke="black" stroke-linecap="round"/>
+<path id="StripeRight" d="M10 6V12" stroke="black" stroke-linecap="round"/>
+<path id="BinLidHandle" d="M11 3V2C11 1.44772 10.5523 1 10 1H6C5.44772 1 5 1.44772 5 2V3" stroke="black"/>
+</g>
+<defs>
+<clipPath id="clip0_388_2">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

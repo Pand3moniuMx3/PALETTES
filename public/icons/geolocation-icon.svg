@@ -1,0 +1,15 @@
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Small Geolocation Icon" clip-path="url(#clip0_350_2)">
+<circle id="OuterScope" cx="5" cy="5" r="3.5" stroke="black"/>
+<path id="RightHair" d="M0.5 5L1.5 5" stroke="black" stroke-linecap="round"/>
+<path id="BottomHair" d="M5 9.5V8.5" stroke="black" stroke-linecap="round"/>
+<path id="RightHair_2" d="M8.5 5L9.5 5" stroke="black" stroke-linecap="round"/>
+<path id="TopHair" d="M5 1.5V0.5" stroke="black" stroke-linecap="round"/>
+<circle id="Ellipse 4" cx="5" cy="5" r="1.5" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_350_2">
+<rect width="10" height="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>

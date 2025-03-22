@@ -1,0 +1,109 @@
+.workshop {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: min(400px, 50%) 1fr;
+  gap: var(--global-gap);
+  overflow: hidden;
+}
+
+/* SIDEBAR */
+
+.workshop .sidebar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-gap);
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+  padding: var(--global-padding);
+  overflow-y: scroll;
+}
+.workshop .sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.workshop .sidebar .selection-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--inner-gap);
+}
+.workshop .sidebar .selection-row .options-wrapper {
+  display: flex;
+  gap: var(--inner-gap);
+}
+.workshop .sidebar .selection-row .options-wrapper .option {
+  padding: 3px 12px;
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.workshop .sidebar .selection-row .options-wrapper .option:hover,
+.workshop .sidebar .selection-row .options-wrapper .option.selected {
+  border: 1px solid var(--clr-active);
+  background: var(--clr-active-bg);
+}
+
+.workshop .sidebar .selection-row .options-wrapper.vertical {
+  flex-direction: column;
+}
+.workshop .sidebar .selection-row .options-wrapper.vertical .color-selector {
+  display: flex;
+  gap: var(--inner-gap);
+}
+.workshop
+  .sidebar
+  .selection-row
+  .options-wrapper.vertical
+  .color-selector
+  .color-input {
+  font-size: 16px;
+  height: 25px;
+  padding: 3px 12px;
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+}
+
+.workshop .sidebar .btns-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--global-gap);
+  padding-top: var(--global-gap);
+  border-top: 1px solid var(--clr-light);
+}
+
+/* PREVIEW */
+
+.workshop .preview-palette {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--global-padding);
+}
+
+.workshop .preview-palette .custom-workshop-palette {
+  max-width: 400px;
+  min-height: 300px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 650px) {
+  .workshop .sidebar {
+    display: none;
+    position: absolute;
+    background: var(--clr-background);
+    inset: 0 0 0 0;
+    z-index: 2;
+  }
+  .workshop .sidebar.open {
+    display: flex;
+  }
+}

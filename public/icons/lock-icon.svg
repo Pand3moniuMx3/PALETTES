@@ -1,0 +1,7 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Small Lock Icon">
+<rect id="LockBody" x="1.5" y="7.5" width="13" height="8" rx="0.5" stroke="black"/>
+<path id="LockArm" d="M12 7V5C12 2.79086 10.2091 1 8 1V1C5.79086 1 4 2.79086 4 5V7" stroke="black"/>
+<path id="KeyHole" d="M8 10V13" stroke="black" stroke-linecap="round"/>
+</g>
+</svg>

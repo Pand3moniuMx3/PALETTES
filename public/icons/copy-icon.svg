@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mid Copy Icon" clip-path="url(#clip0_370_18)">
+<path id="RecRight" d="M7 4.2V2C7 1.44772 7.44772 1 8 1H14C14.5523 1 15 1.44772 15 2V8C15 8.55228 14.5523 9 14 9H11.8" stroke="white" stroke-linecap="round"/>
+<rect id="RecLeft" x="1" y="7" width="8" height="8" rx="1" stroke="white"/>
+</g>
+<defs>
+<clipPath id="clip0_370_18">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

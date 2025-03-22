@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mid Logout Icon" clip-path="url(#clip0_386_2)">
+<path id="Rectangle 13" d="M9 3.5V2C9 1.44772 8.55228 1 8 1H2C1.44772 1 1 1.44772 1 2V14C1 14.5523 1.44772 15 2 15H8C8.55228 15 9 14.5523 9 14V12.5" stroke="black" stroke-linecap="round"/>
+<path id="Vector 33" d="M15 8H5M15 8L12 5M15 8L12 11" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_386_2">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

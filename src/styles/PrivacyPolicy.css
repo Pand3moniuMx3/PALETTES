@@ -1,0 +1,25 @@
+.privacy-policy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-padding);
+}
+
+.privacy-policy .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--inner-gap);
+  align-items: start;
+  padding: var(--global-padding);
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+}
+
+.privacy-policy .row ul {
+  transform: translateX(var(--global-padding));
+}
+
+.privacy-policy .row .effective-date {
+  background: var(--clr-main);
+  color: var(--clr-light);
+}

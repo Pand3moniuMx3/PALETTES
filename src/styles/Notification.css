@@ -1,0 +1,77 @@
+.notification {
+  position: fixed;
+  width: min(360px, 90%);
+  height: auto;
+  right: -400px;
+  opacity: 0;
+  bottom: var(--global-padding);
+  border-radius: var(--border-radius) var(--border-radius) var(--border-radius)
+    0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.notification .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--inner-gap);
+  padding: var(--inner-padding);
+}
+.notification .top-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.notification .top-info img {
+  cursor: pointer;
+}
+
+.notification .progress-track {
+  width: 100%;
+  height: 1px;
+  position: relative;
+}
+.notification .progress-track .progress-bar {
+  position: absolute;
+  inset: 0 100% 0 0;
+}
+
+/* ACTIVE */
+
+.notification.active {
+  right: var(--global-padding);
+  opacity: 1;
+}
+.notification.active .progress-track .progress-bar {
+  animation: progress-bar 5s linear;
+}
+
+@keyframes progress-bar {
+  0% {
+    inset: 0 0 0 0;
+  }
+  100% {
+    inset: 0 100% 0 0;
+  }
+}
+
+/* VARIATIONS */
+
+.notification.positive {
+  background: var(--clr-active-bg);
+  border: 1px solid var(--clr-active);
+}
+.notification.positive .progress-track .progress-bar {
+  background: var(--clr-active);
+}
+
+.notification.negative {
+  background: var(--clr-incorrect-bg);
+  border: 1px solid var(--clr-incorrect);
+}
+.notification.negative .progress-track .progress-bar {
+  background: var(--clr-incorrect);
+}

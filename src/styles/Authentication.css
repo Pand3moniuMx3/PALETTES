@@ -1,0 +1,41 @@
+:root {
+  --clr-active: #48a4ff;
+  --clr-active-bg: #e4f2ff;
+  --clr-correct: #2eff8c;
+  --clr-correct-bg: #f6fffa;
+  --clr-incorrect: #ff0000;
+  --clr-incorrect-bg: #ffe6e6;
+}
+
+.page.login {
+  justify-content: center;
+  min-height: 100vh;
+}
+
+form {
+  width: min(400px, 90vw);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--global-gap);
+}
+
+form .input-wrapper {
+  width: 100%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 12px;
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+}
+form .input-wrapper.active {
+  border: 1px solid var(--clr-active);
+  background: var(--clr-active-bg);
+}
+form .input-wrapper.active.incorrect {
+  border: 1px solid var(--clr-incorrect);
+  background: var(--clr-incorrect-bg);
+}

@@ -1,0 +1,27 @@
+.square-btn {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.square-btn.primary {
+  background: var(--clr-main);
+  border: 1px solid var(--clr-main);
+}
+.square-btn.primary:hover {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.square-btn.secondary {
+  background: transparent;
+  border: 1px solid var(--clr-light);
+}
+.square-btn.secondary:hover {
+  border: 1px solid var(--clr-text);
+}

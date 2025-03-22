@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mid Id Card Icon">
+<path id="Card" d="M2 3H14C14.8284 3 15.5 3.67157 15.5 4.5V11.5C15.5 12.3284 14.8284 13 14 13H2C1.17157 13 0.5 12.3284 0.5 11.5V4.5C0.5 3.67157 1.17157 3 2 3Z" stroke="black"/>
+<path id="Body" d="M7 12C7 10.5 6 9.5 4.5 9.5C3 9.5 2 10.5 2 12" stroke="black" stroke-linecap="square"/>
+<path id="Head" d="M6 6.5C6 7.35631 5.24961 8 4.5 8C3.75039 8 3 7.35631 3 6.5C3 5.64369 3.75039 5 4.5 5C5.24961 5 6 5.64369 6 6.5Z" stroke="black"/>
+<path id="Line3" d="M9 9.5L11.5 9.5" stroke="black" stroke-linecap="round"/>
+<path id="Line2" d="M9 7.5H13" stroke="black" stroke-linecap="round"/>
+<path id="Line1" d="M9 5.5H13" stroke="black" stroke-linecap="round"/>
+</g>
+</svg>

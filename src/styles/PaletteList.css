@@ -1,0 +1,16 @@
+.palette-list {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: min(400px, 50%) 1fr;
+  gap: var(--global-gap);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 650px) {
+  .palette-list {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}

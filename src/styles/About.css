@@ -1,0 +1,206 @@
+.about {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  justify-items: center;
+  overflow: hidden;
+  padding: var(--global-padding);
+  gap: var(--global-gap);
+}
+
+/* TOF */
+
+.about .tof {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--global-gap);
+  padding: var(--global-padding);
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+  z-index: 1;
+  transition: var(--transition);
+}
+.about .tof::-webkit-scrollbar {
+  display: none;
+}
+
+.about .tof .btn-container {
+  display: none;
+}
+
+.about .tof .category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--inner-gap);
+}
+.about .tof .category {
+  padding-top: var(--global-padding);
+  border-top: 1px solid var(--clr-light);
+}
+.about .tof .category.first {
+  padding-top: 0;
+  border-top: none;
+}
+.about .tof .category b {
+  font-size: 18px;
+}
+
+.about .tof .category .items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about .tof .category .items a {
+  transition: var(--transition);
+  color: var(--clr-text);
+}
+.about .tof .category .items a:hover {
+  transform: translateX(3px);
+  color: var(--clr-main);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+/* CONTENT */
+
+.about .content {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--global-gap);
+}
+.about .content::-webkit-scrollbar {
+  display: none;
+}
+
+.about .content .btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .content .btn-container .tof-btn {
+  display: none;
+}
+
+.about .content .topic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-gap);
+}
+
+.about .content .topic .chapter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--inner-gap);
+  padding: var(--global-padding);
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+}
+.about .content .topic .chapter h3 {
+  font-size: 24px;
+}
+
+.about .content .topic .chapter .img-wrapper {
+  max-width: 100%;
+  border: 1px solid var(--clr-light);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin-block: var(--inner-gap);
+}
+.about .content .topic .chapter .img-wrapper img {
+  width: 100%;
+}
+
+.about .content .topic .chapter .details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.about .content .topic .chapter .property {
+  color: var(--clr-main);
+  margin-right: 6px;
+}
+.about .content .topic .chapter .property.c {
+  border: 1px solid var(--clr-active);
+  background: var(--clr-active-bg);
+}
+.about .content .topic .chapter .property.nc {
+  border: 1px solid var(--clr-incorrect);
+  background: var(--clr-incorrect-bg);
+}
+
+.about .content .topic .chapter .library {
+  background: var(--clr-main);
+  margin-right: 6px;
+}
+.about .content .topic .chapter .library a {
+  color: var(--clr-background);
+  font-size: 12px;
+  font-family: "Inter-Light";
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 650px) {
+  .about {
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow: auto;
+  }
+
+  /* TOF */
+  .about .tof {
+    position: fixed;
+    width: min(300px, 90%);
+    height: 100vh;
+    top: 0;
+    right: -400px;
+    background: var(--clr-light);
+    border: none;
+    border-radius: 0;
+  }
+  .about .tof.open {
+    right: 0px;
+  }
+
+  .about .tof .btn-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .about .tof .category,
+  .about .tof .category.first {
+    padding-top: var(--global-padding);
+    border-top: 1px solid #c7cace;
+  }
+
+  .about .tof .category b {
+    font-size: 16px;
+  }
+
+  /* CONTENT */
+  .about .content .btn-container .tof-btn {
+    display: flex;
+  }
+
+  .about .content .topic .chapter {
+    padding: 15px;
+  }
+}
